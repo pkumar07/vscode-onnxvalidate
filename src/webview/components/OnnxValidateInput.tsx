@@ -9,7 +9,7 @@ import { Bar, BarChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip, XAx
 declare var acquireVsCodeApi: any;
 const vscode = acquireVsCodeApi();
 
-export const OnnxValidateInput: React.SFC = () => {
+const OnnxValidateInput: React.SFC = () => {
     const divStyle = {
         height: '600px', width: '800px'
     };
@@ -220,3 +220,5 @@ export const OnnxValidateInput: React.SFC = () => {
         </div>
     );
 }
+
+export default OnnxValidateInput;

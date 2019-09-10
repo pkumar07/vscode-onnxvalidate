@@ -14,14 +14,15 @@
 		// "noFallthroughCasesInSwitch": true, /* Report errors for fallthrough cases in switch statement. */
 		// "noUnusedParameters": true,  /* Report errors on unused parameters. */
 		"jsx" : "react",
-		"esModuleInterop" : true // needed by ts-loader, apparently otherwise react{,-dom} cannot be default-imported
+		"esModuleInterop" : true, // needed by ts-loader, apparently otherwise react{,-dom} cannot be default-imported
+		"resolveJsonModule" : true, //needed to import json file
+		"moduleResolution": "node"
 	},
 	"include" : [
 		"src"
 	],
 	"exclude": [
 		"node_modules",
-		".vscode-test",
-		"src/webview"
+		".vscode-test"
 	]
 }
