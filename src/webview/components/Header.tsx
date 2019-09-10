@@ -1,11 +1,16 @@
 import React from 'react';
+import '../css/index.css';
 
-const Header: React.SFC = () => {
+interface HeaderName {
+    name: string,
+}
+
+const Header: React.FunctionComponent<HeaderName> = (props) => {
     return (
-        <div>
-            ONNX!
+        <div className="container-header">
+            {props.name}
         </div>
-    )
+    );
 };
 
 export default Header;

@@ -1,0 +1,14 @@
+.container {
+    width: 80%;
+    border: 1px solid black;
+    padding: 15px;
+    background-color: #282c34;
+    color: white;
+}
+
+.container-header {
+    text-align: center;
+    background-color: #282c34;
+    min-height: 8vh;
+    font-size: calc(10px + 2vmin);
+}
